@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AetherWatch AI · Design Time Your Way</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@600;700&family=JetBrains+Mono:wght@600;700&family=Jost:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="stage">
+  <div class="scale" id="scale"><div class="watch" id="watch">
+    <div class="face" id="face" tabindex="0" aria-label="AetherWatch AI watch face. Swipe or use arrow keys to change screens."></div>
+  </div></div>
+  <p class="note">466 × 466 AMOLED preview · swipe, click arrows, or press ← →</p>
+</main>
+<aside class="panel">
+  <div><h1>AetherWatch AI</h1><div class="tag">Design Time Your Way</div></div>
+  <div class="btns">
+    <button class="primary" id="startTour">START TOUR</button>
+    <button class="stop" id="stopTour">STOP TOUR</button>
+    <button id="prev">← Previous</button>
+    <button id="next">Next →</button>
+    <button id="amb" aria-pressed="false">Ambient mode</button>
+    <button id="auto">Auto personalise</button>
+  </div>
+  <div class="sel">
+    <label>Time of day <select id="ctx"><option value="auto">Auto (clock)</option><option value="morning">Morning</option><option value="afternoon">Afternoon</option><option value="evening">Evening</option><option value="sleep">Sleep time</option></select></label>
+    <label>Weather <select id="wx"><option value="sunny">Sunny</option><option value="cloudy">Cloudy</option><option value="rain">Rain</option></select></label>
+  </div>
+  <div id="caption"><b>Ready</b>Press START TOUR to see every screen and AI behaviour.</div>
+  <div class="metrics">
+    <div>Screen: <b id="mScreen">Welcome</b></div>
+    <div>Health score: <b id="mScore">0</b></div>
+    <div>Context: <b id="mCtx">Morning</b></div>
+    <div>Battery AI: <b id="mBat">Smart power</b></div>
+  </div>
+  <small>Wellness tips are general lifestyle guidance, not medical advice.</small>
+</aside>
+<script src="script.js"></script>
+</body>
+</html>
